@@ -1,0 +1,64 @@
+POST http://127.0.0.1:8000/api/v1/posts/create/ 
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwiZW1haWwiOiJuZXd1c2VyQGdtYWlsLmNvbSIsImV4cCI6MTYxODY5MzMzNywiaWF0IjoxNjE4Njg5NzM3fQ.BrGOQs_ok7LNokk_2u0q5Qr1xgMDYPXgw1mcgA2MVsA
+
+{
+  "content": "New post created via rest vscode client"
+}
+
+###
+GET http://127.0.0.1:8000/api/v1/posts/list/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwiZW1haWwiOiJuZXd1c2VyQGdtYWlsLmNvbSIsImV4cCI6MTYxODczNjUzNiwiaWF0IjoxNjE4NzMyOTM2fQ.eer-jVMxnAfuK-lCJH9oy2QceHDch8Jdd23T5nDU9zQ
+
+###
+POST http://127.0.0.1:8000/api/v1/posts/comment/1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwiZW1haWwiOiJuZXd1c2VyQGdtYWlsLmNvbSIsImV4cCI6MTYxODY5MzMzNywiaWF0IjoxNjE4Njg5NzM3fQ.BrGOQs_ok7LNokk_2u0q5Qr1xgMDYPXgw1mcgA2MVsA
+
+{
+  "comment": "new comment added via rest client"
+}
+
+###
+PUT http://127.0.0.1:8000/api/v1/posts/update/1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwiZW1haWwiOiJuZXd1c2VyQGdtYWlsLmNvbSIsImV4cCI6MTYxODY5MzMzNywiaWF0IjoxNjE4Njg5NzM3fQ.BrGOQs_ok7LNokk_2u0q5Qr1xgMDYPXgw1mcgA2MVsA
+
+{
+  "content": "post via vscode rest client updated"
+}
+
+###
+DELETE http://127.0.0.1:8000/api/v1/posts/delete/1
+
+###
+GET  http://127.0.0.1:8000/api/v1/posts/comments
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwiZW1haWwiOiJuZXd1c2VyQGdtYWlsLmNvbSIsImV4cCI6MTYxODczNjUzNiwiaWF0IjoxNjE4NzMyOTM2fQ.eer-jVMxnAfuK-lCJH9oy2QceHDch8Jdd23T5nDU9zQ
+
+###
+GET  http://127.0.0.1:8000/api/v1/posts/detail/1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwiZW1haWwiOiJuZXd1c2VyQGdtYWlsLmNvbSIsImV4cCI6MTYxODY5MzMzNywiaWF0IjoxNjE4Njg5NzM3fQ.BrGOQs_ok7LNokk_2u0q5Qr1xgMDYPXgw1mcgA2MVsA
+
+###
+POST http://127.0.0.1:8000/api/v1/users/register/ 
+Content-Type: application/json
+
+{
+  "email": "",
+  "username": "",
+  "password": "",
+  "password2": ""
+}
+
+###
+POST http://127.0.0.1:8000/api/v1/users/login/ 
+Content-Type: application/json
+
+{
+  "email": "newuser@gmail.com", 
+  "password": "password@123"
+}
+
+###
+GET http://127.0.0.1:8000/api/v1/users/profile/ 
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwiZW1haWwiOiJuZXd1c2VyQGdtYWlsLmNvbSIsImV4cCI6MTYxODY5NTA0NywiaWF0IjoxNjE4NjkxNDQ3fQ.aPOEO4jTh-1t1NW_aIhtQIK57i9iK4DYB-rA7SNB3nQ
