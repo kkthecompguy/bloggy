@@ -2,8 +2,8 @@
 This is the blog post build on djangoresetframework
 
 ### Setup/Installation Requirements
-Ensure you have python installed on your machine
-You have using linux Os you need to install pip3 ```sudo apt-get install python3-pip```
+Ensure you have python installed on your machine.
+If you are using linux Os, you need to install pip3 ```sudo apt-get install python3-pip```
 
 Activate a virtualenv ---- best pratice ---- ```virtualenv venv && source venv/bin/activate```
 
@@ -11,7 +11,7 @@ Install Django & DjangoRestFramework & Project dependencies ```pip3 install -r r
 
 Make migrations & Run the server ```python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py runserver```
 
-Use postman or any other client for testing
+Use postman or any other rest client for testing
 
 ### API Endpoints
 Authentication
